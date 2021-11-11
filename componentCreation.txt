@@ -1,0 +1,72 @@
+
+I had to create a new component for the kinsonline bootstrap tool, used by the content developers 
+to generate html letting them copy it.
+The component had to be based on their guidance: https://keats.kcl.ac.uk/mod/book/view.php?id=4599788
+
+I followed the previous pattern, to keep consistency.
+
+I needed to first create a card containing:
+	-an image (optional to show or hide, when not an image src added, display a template). Default show
+	-a header (optional to show or hide). Default show 
+	-text (Always show)
+	-a connector to the following card, with a label (optional to show or hide). Default hide
+		-Arrow down
+		-Arrow up
+		-Double arrow
+		-Relation
+
+The card had to give the option to add more cards if needed(max of 8) and a default number of 3.
+
+
+There had to be:
+	-An options area form.
+	-A dropdown with forms for all the cards to fill up.
+	-A preview area(showing a preview of the component built) where the users could see the changes on the go
+	-A code area(showing the html markup) where users could see the changes on the go
+
+The initial task was to show or hide all images and headers. I suggested to do it individual
+
+Final version. 
+https://iddkingsonline.com/ko-bb-dev1/builder.php# (process builder)
+
+
+
+Initially, the code was all in one file. The whole system was structured that way. Depending on the menu selection, the code would
+generate the forms and preview and code panels for each one of them. All of them linked to one only .js file on jquery.
+
+I had to then re-think the way every function worked to keep a bit of consistency for the way everything was set up.
+
+The aproach seemed to be working fine with the first component. As I was adding new ones, I kept finding new ways to implement my code
+
+to make it more reusable and clean.
+
+Most os my code was done in JavaScript. I had to manipulate the DOM and every component would work on the client side.
+
+
+For this project, I assited meetings every week to share suggestions with every department involved and to keep track of its progress. 
+
+Communication is the best way to make sure everything and everyone is keeping up with the requirements. It also gives you a starting point to make it better
+
+I have learn that most of the times, simple is good. Keeping communicative at all times. Next time I have to think, plan, structure, test and then code.  
+
+
+
+DECIMAL TO ROMAN
+
+1: I, 4: IV, 5: V, 9: IX, 10: X, 40: XL, 50: L, 90: XC, 100: C, 400: CD, 500: D, 900: CM, 1000: M
+
+I need a number between 1 and 3999 (restricted to this)
+
+X = number
+
+1.- Compare the number against the list above.
+
+	-check if X >= aboveList.keyValue (maybe create another list with the matches)
+
+2.- Find the maximum value from that list and substract it from X till X = 0
+
+
+
+
+
+
